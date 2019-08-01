@@ -14,11 +14,25 @@
   margin: 4px 2px;
   cursor: pointer;
 }
+video.fullscreen { 
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  transform: translate(-50%, -50%);
+}
 </script>
 </head>
 <body>
 
-
+<video class="video.fullscreen" loop autoplay>
+  <source src="video.mp4" type="video/mp4">
+  Your browser does not support this introduction video. <a href="./home.html">Click here!</a>
+</video>
   
 <a href="./earner.html" class="button" left="40%" top="75%">Earn</a>
 <a href="./advertiser.html" class="button" left="60%" top="75%">Advertise</a>
